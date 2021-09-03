@@ -1,3 +1,6 @@
 (fp_lib_table
   (lib (name kicad-footprints-master)(type KiCad)(uri /Users/dylanballback/Downloads/kicad-footprints-master)(options "")(descr ""))
+  (lib (name MCU_RaspberryPi_and_Boards)(type KiCad)(uri ${KIPRJMOD}/Footprints/MCU_RaspberryPi_and_Boards.pretty)(options "")(descr ""))
+  (lib (name Charleslabs_Parts)(type KiCad)(uri /Users/dylanballback/Downloads/kicad_parts-master/Charleslabs_Parts.pretty)(options "")(descr ""))
+  (lib (name LM1117T-3)(type KiCad)(uri /Users/dylanballback/Downloads/LM1117T-3.3_NOPB)(options "")(descr ""))
 )
