@@ -16,13 +16,13 @@ $EndDescr
 $Comp
 L MCU_RaspberryPi_and_Boards:Pico U1
 U 1 1 61312BD2
-P 5000 3850
-F 0 "U1" H 5000 5065 50  0000 C CNN
-F 1 "Pico" H 5000 4974 50  0000 C CNN
-F 2 "RPi_Pico:RPi_Pico_SMD_TH" V 5000 3850 50  0001 C CNN
-F 3 "" H 5000 3850 50  0001 C CNN
-	1    5000 3850
-	0    -1   -1   0   
+P 5500 4000
+F 0 "U1" H 5500 3800 50  0000 L CNN
+F 1 "Pico" H 5450 3900 50  0000 L CNN
+F 2 "RPi_Pico:RPi_Pico_SMD_TH" V 5500 4000 50  0001 C CNN
+F 3 "" H 5500 4000 50  0001 C CNN
+	1    5500 4000
+	-1   0    0    1   
 $EndComp
 $Comp
 L Connector_Generic:Conn_01x06 J5
@@ -90,20 +90,20 @@ F 3 "~" H 10250 1750 50  0001 C CNN
 	1    10250 1750
 	1    0    0    -1  
 $EndComp
-Text Notes 9550 900  0    50   ~ 0
+Text Notes 9490 990  0    59   ~ 12
 HW-131\n
-Text GLabel 5950 2900 1    50   Input ~ 0
+Text GLabel 4550 3050 0    50   Input ~ 0
 GP16
-Text GLabel 5850 2900 1    50   Input ~ 0
+Text GLabel 4550 3150 0    50   Input ~ 0
 GP17
 Wire Wire Line
-	4650 2900 4650 3150
-Text GLabel 4650 2900 1    50   Input ~ 0
+	4550 4350 4800 4350
+Text GLabel 4550 4350 0    50   Input ~ 0
 GP28
 Wire Wire Line
-	5950 2900 5950 3150
+	4550 3050 4800 3050
 Wire Wire Line
-	5850 2900 5850 3150
+	4550 3150 4800 3150
 Text GLabel 4350 1550 0    50   Input ~ 0
 GP28
 Wire Wire Line
@@ -111,21 +111,21 @@ Wire Wire Line
 $Comp
 L power:GND #PWR0101
 U 1 1 613709B0
-P 5750 4900
-F 0 "#PWR0101" H 5750 4650 50  0001 C CNN
-F 1 "GND" H 5755 4727 50  0000 C CNN
-F 2 "" H 5750 4900 50  0001 C CNN
-F 3 "" H 5750 4900 50  0001 C CNN
-	1    5750 4900
-	1    0    0    -1  
+P 6550 3250
+F 0 "#PWR0101" H 6550 3000 50  0001 C CNN
+F 1 "GND" H 6555 3077 50  0000 C CNN
+F 2 "" H 6550 3250 50  0001 C CNN
+F 3 "" H 6550 3250 50  0001 C CNN
+	1    6550 3250
+	0    -1   -1   0   
 $EndComp
 Text GLabel 9650 3550 2    50   Input ~ 0
 GP15
-Text GLabel 5950 4650 3    50   Input ~ 0
+Text GLabel 6300 3050 2    50   Input ~ 0
 GP15
 Text GLabel 8650 3550 0    50   Input ~ 0
 GP14
-Text GLabel 5850 4650 3    50   Input ~ 0
+Text GLabel 6300 3150 2    50   Input ~ 0
 GP14
 Text GLabel 8700 4900 0    50   Input ~ 0
 GP16
@@ -140,11 +140,11 @@ Wire Wire Line
 Wire Wire Line
 	8650 3550 8900 3550
 Wire Wire Line
-	5950 4650 5950 4550
+	6300 3050 6200 3050
 Wire Wire Line
-	5850 4550 5850 4650
+	6200 3150 6300 3150
 Wire Wire Line
-	5750 4550 5750 4900
+	6200 3250 6550 3250
 Wire Wire Line
 	4350 1550 4600 1550
 $Comp
@@ -153,7 +153,7 @@ U 1 1 61335072
 P 5300 1650
 F 0 "U2" H 5300 2217 50  0000 C CNN
 F 1 "level_converter_BOB-12009" H 5300 2126 50  0000 C CNN
-F 2 "CONV_BOB-12009" H 5300 1650 50  0001 L BNN
+F 2 "BOB-12009:CONV_BOB-12009" H 5300 1650 50  0001 L BNN
 F 3 "" H 5300 1650 50  0001 L BNN
 F 4 "N/A" H 5300 1650 50  0001 L BNN "MAXIMUM_PACKAGE_HEIGHT"
 F 5 "SparkFun Electronics" H 5300 1650 50  0001 L BNN "MANUFACTURER"
@@ -175,15 +175,15 @@ F 3 "" H 8450 3450 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	8900 3450 8450 3450
-Text GLabel 4550 4700 3    50   Input ~ 0
+Text GLabel 6350 4450 2    50   Input ~ 0
 GP4
 Wire Wire Line
 	8900 3750 8650 3750
 Wire Wire Line
-	4550 4550 4550 4700
-Text GLabel 4850 4700 3    50   Input ~ 0
+	6200 4450 6350 4450
+Text GLabel 6350 4150 2    50   Input ~ 0
 GP6
-Text GLabel 4950 4700 3    50   Input ~ 0
+Text GLabel 6350 4050 2    50   Input ~ 0
 GP7
 Text GLabel 8650 3650 0    50   Input ~ 0
 GP6
@@ -194,9 +194,9 @@ Wire Wire Line
 Wire Wire Line
 	8900 3650 8650 3650
 Wire Wire Line
-	4950 4700 4950 4550
+	6350 4050 6200 4050
 Wire Wire Line
-	4850 4550 4850 4700
+	6200 4150 6350 4150
 Wire Wire Line
 	10050 1850 9950 1850
 $Comp
@@ -281,63 +281,57 @@ F 3 "" H 9950 1850 50  0001 C CNN
 $EndComp
 Text GLabel 8650 3750 0    50   Input ~ 0
 GP4
-Text Label 9050 4600 0    50   ~ 0
-Relay
-Text Label 9050 3100 0    50   ~ 0
-Antena
-Text Label 5050 900  0    50   ~ 0
-Level_Converter
 Text Label 6700 1350 0    50   ~ 0
 ESC_conection
 $Comp
 L power:GND #PWR0108
 U 1 1 613EDF9A
-P 4250 2950
-F 0 "#PWR0108" H 4250 2700 50  0001 C CNN
-F 1 "GND" H 4255 2777 50  0000 C CNN
-F 2 "" H 4250 2950 50  0001 C CNN
-F 3 "" H 4250 2950 50  0001 C CNN
-	1    4250 2950
-	-1   0    0    1   
+P 4600 4750
+F 0 "#PWR0108" H 4600 4500 50  0001 C CNN
+F 1 "GND" H 4605 4577 50  0000 C CNN
+F 2 "" H 4600 4750 50  0001 C CNN
+F 3 "" H 4600 4750 50  0001 C CNN
+	1    4600 4750
+	0    1    1    0   
 $EndComp
 Wire Wire Line
-	4250 3150 4250 2950
+	4800 4750 4600 4750
 Text Notes 8100 7650 0    50   ~ 10
 9/3/21\n
 Text Notes 7350 7500 0    50   ~ 10
 Crazy Cart Autonomous Brain V1\n
-NoConn ~ 4050 4550
-NoConn ~ 4150 4550
-NoConn ~ 4250 4550
-NoConn ~ 4350 4550
-NoConn ~ 4450 4550
-NoConn ~ 4650 4550
-NoConn ~ 4750 4550
-NoConn ~ 5050 4550
-NoConn ~ 5150 4550
-NoConn ~ 5250 4550
-NoConn ~ 5350 4550
-NoConn ~ 5450 4550
-NoConn ~ 5550 4550
-NoConn ~ 5650 4550
-NoConn ~ 4050 3150
-NoConn ~ 4150 3150
-NoConn ~ 4350 3150
-NoConn ~ 4550 3150
-NoConn ~ 4750 3150
-NoConn ~ 4850 3150
-NoConn ~ 4950 3150
-NoConn ~ 5050 3150
-NoConn ~ 5150 3150
-NoConn ~ 5250 3150
-NoConn ~ 5350 3150
-NoConn ~ 5450 3150
-NoConn ~ 5550 3150
-NoConn ~ 5650 3150
-NoConn ~ 5750 3150
-NoConn ~ 6150 3750
-NoConn ~ 6150 3850
-NoConn ~ 6150 3950
+NoConn ~ 6200 4950
+NoConn ~ 6200 4850
+NoConn ~ 6200 4750
+NoConn ~ 6200 4650
+NoConn ~ 6200 4550
+NoConn ~ 6200 4350
+NoConn ~ 6200 4250
+NoConn ~ 6200 3950
+NoConn ~ 6200 3850
+NoConn ~ 6200 3750
+NoConn ~ 6200 3650
+NoConn ~ 6200 3550
+NoConn ~ 6200 3450
+NoConn ~ 6200 3350
+NoConn ~ 4800 4950
+NoConn ~ 4800 4850
+NoConn ~ 4800 4650
+NoConn ~ 4800 4450
+NoConn ~ 4800 4250
+NoConn ~ 4800 4150
+NoConn ~ 4800 4050
+NoConn ~ 4800 3950
+NoConn ~ 4800 3850
+NoConn ~ 4800 3750
+NoConn ~ 4800 3650
+NoConn ~ 4800 3550
+NoConn ~ 4800 3450
+NoConn ~ 4800 3350
+NoConn ~ 4800 3250
+NoConn ~ 5400 2850
+NoConn ~ 5500 2850
+NoConn ~ 5600 2850
 NoConn ~ 4600 1850
 NoConn ~ 4600 1750
 NoConn ~ 4600 1650
@@ -351,13 +345,13 @@ NoConn ~ 8950 5300
 $Comp
 L power:+3.3V #PWR0109
 U 1 1 6140785E
-P 4450 2750
-F 0 "#PWR0109" H 4450 2600 50  0001 C CNN
-F 1 "+3.3V" H 4465 2923 50  0000 C CNN
-F 2 "" H 4450 2750 50  0001 C CNN
-F 3 "" H 4450 2750 50  0001 C CNN
-	1    4450 2750
-	1    0    0    -1  
+P 4400 4550
+F 0 "#PWR0109" H 4400 4400 50  0001 C CNN
+F 1 "+3.3V" H 4415 4723 50  0000 C CNN
+F 2 "" H 4400 4550 50  0001 C CNN
+F 3 "" H 4400 4550 50  0001 C CNN
+	1    4400 4550
+	0    -1   -1   0   
 $EndComp
 $Comp
 L power:+3.3V #PWR0110
@@ -449,7 +443,15 @@ Wire Wire Line
 Wire Wire Line
 	6550 1650 6550 2050
 Wire Wire Line
-	4450 3150 4450 2750
+	4800 4550 4400 4550
 Wire Wire Line
 	4600 1350 4350 1350
+Text Notes 9000 3940 0    59   ~ 12
+Antenna
+Text Notes 9040 4680 0    59   ~ 12
+Relay
+Text Notes 5370 5330 0    59   ~ 12
+PICO
+Text Notes 5030 980  0    59   ~ 12
+Level Converter
 $EndSCHEMATC
