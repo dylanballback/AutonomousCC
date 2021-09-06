@@ -1,4 +1,3 @@
-<<<<<<< Updated upstream
 EESchema Schematic File Version 4
 EELAYER 30 0
 EELAYER END
@@ -129,17 +128,6 @@ Wire Wire Line
 	7300 3650 7150 3650
 Wire Wire Line
 	7150 3750 7300 3750
-$Comp
-L Connector:Screw_Terminal_01x02 J1
-U 1 1 61375E77
-P 6420 1620
-F 0 "J1" H 6570 1520 50  0000 C CNN
-F 1 "Screw_Terminal_01x02" H 6920 1620 50  0000 C CNN
-F 2 "TerminalBlock_MetzConnect:TerminalBlock_MetzConnect_Type011_RT05502HBWC_1x02_P5.00mm_Horizontal" H 6420 1620 50  0001 C CNN
-F 3 "~" H 6420 1620 50  0001 C CNN
-	1    6420 1620
-	1    0    0    -1  
-$EndComp
 $Comp
 L power:GND #PWR0105
 U 1 1 613C4FFD
@@ -292,16 +280,8 @@ Wire Wire Line
 	9850 2800 9950 2800
 Text Notes 8720 3110 0    59   ~ 12
 Linear Voltage REG\n   3.3V -> 5V
-Text Notes 6310 1500 0    59   ~ 12
+Text Notes 6300 1450 0    59   ~ 12
 ESC Connection
-Wire Wire Line
-	6000 1350 6220 1350
-Wire Wire Line
-	6220 1350 6220 1620
-Wire Wire Line
-	6220 1720 6220 2050
-Wire Wire Line
-	6220 2050 6000 2050
 NoConn ~ 8970 1640
 NoConn ~ 8970 1740
 Wire Wire Line
@@ -424,394 +404,25 @@ F 3 "" H 9450 3900 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	9350 3900 9450 3900
+$Comp
+L 282837-2:282837-2 Screw_Terminal?
+U 1 1 6136899C
+P 6600 1600
+F 0 "Screw_Terminal?" H 6730 1596 50  0000 L CNN
+F 1 "282837-2" H 6730 1505 50  0000 L CNN
+F 2 "TE_282837-2" H 6600 1600 50  0001 L BNN
+F 3 "" H 6600 1600 50  0001 L BNN
+F 4 "282837-2" H 6600 1600 50  0001 L BNN "Comment"
+	1    6600 1600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6000 1350 6300 1350
+Wire Wire Line
+	6300 1350 6300 1600
+Wire Wire Line
+	6300 1700 6300 2050
+Wire Wire Line
+	6000 2050 6300 2050
+Connection ~ 6000 2050
 $EndSCHEMATC
-=======
-EESchema Schematic File Version 4
-EELAYER 30 0
-EELAYER END
-$Descr A4 11693 8268
-encoding utf-8
-Sheet 1 1
-Title ""
-Date ""
-Rev ""
-Comp ""
-Comment1 ""
-Comment2 ""
-Comment3 ""
-Comment4 ""
-$EndDescr
-$Comp
-L MCU_RaspberryPi_and_Boards:Pico U1
-U 1 1 61312BD2
-P 5500 4000
-F 0 "U1" H 5500 3800 50  0000 L CNN
-F 1 "Pico" H 5450 3900 50  0000 L CNN
-F 2 "RPi_Pico:RPi_Pico_SMD_TH" V 5500 4000 50  0001 C CNN
-F 3 "" H 5500 4000 50  0001 C CNN
-	1    5500 4000
-	-1   0    0    1   
-$EndComp
-$Comp
-L Connector_Generic:Conn_01x06 J5
-U 1 1 6132C346
-P 9100 5450
-F 0 "J5" H 9180 5442 50  0000 L CNN
-F 1 "Relay_Conn_01x06" H 9180 5351 50  0000 L CNN
-F 2 "" H 9100 5450 50  0001 C CNN
-F 3 "~" H 9100 5450 50  0001 C CNN
-	1    9100 5450
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector_Generic:Conn_02x04_Odd_Even J2
-U 1 1 6132E9AC
-P 9050 4000
-F 0 "J2" H 9100 4317 50  0000 C CNN
-F 1 "Antenna_Conn_02x04_Odd_Even" H 9100 4226 50  0000 C CNN
-F 2 "" H 9050 4000 50  0001 C CNN
-F 3 "~" H 9050 4000 50  0001 C CNN
-	1    9050 4000
-	1    0    0    -1  
-$EndComp
-Text GLabel 4550 3050 0    50   Input ~ 0
-GP16
-Text GLabel 4550 3150 0    50   Input ~ 0
-GP17
-Wire Wire Line
-	4550 4350 4800 4350
-Text GLabel 4550 4350 0    50   Input ~ 0
-GP28
-Wire Wire Line
-	4550 3050 4800 3050
-Wire Wire Line
-	4550 3150 4800 3150
-Text GLabel 4350 1550 0    50   Input ~ 0
-GP28
-$Comp
-L power:GND #PWR0101
-U 1 1 613709B0
-P 6550 3250
-F 0 "#PWR0101" H 6550 3000 50  0001 C CNN
-F 1 "GND" H 6555 3077 50  0000 C CNN
-F 2 "" H 6550 3250 50  0001 C CNN
-F 3 "" H 6550 3250 50  0001 C CNN
-	1    6550 3250
-	0    -1   -1   0   
-$EndComp
-Text GLabel 9600 4000 2    50   Input ~ 0
-GP15
-Text GLabel 6300 3050 2    50   Input ~ 0
-GP15
-Text GLabel 8600 4000 0    50   Input ~ 0
-GP14
-Text GLabel 6300 3150 2    50   Input ~ 0
-GP14
-Text GLabel 8650 5350 0    50   Input ~ 0
-GP16
-Text GLabel 8650 5450 0    50   Input ~ 0
-GP17
-Wire Wire Line
-	8650 5350 8900 5350
-Wire Wire Line
-	8650 5450 8900 5450
-Wire Wire Line
-	9350 4000 9600 4000
-Wire Wire Line
-	8600 4000 8850 4000
-Wire Wire Line
-	6300 3050 6200 3050
-Wire Wire Line
-	6200 3150 6300 3150
-Wire Wire Line
-	6200 3250 6550 3250
-Wire Wire Line
-	4350 1550 4600 1550
-$Comp
-L BOB-12009:BOB-12009 U2
-U 1 1 61335072
-P 5300 1650
-F 0 "U2" H 5300 2217 50  0000 C CNN
-F 1 "level_converter_BOB-12009" H 5300 2126 50  0000 C CNN
-F 2 "BOB-12009:CONV_BOB-12009" H 5300 1650 50  0001 L BNN
-F 3 "" H 5300 1650 50  0001 L BNN
-F 4 "N/A" H 5300 1650 50  0001 L BNN "MAXIMUM_PACKAGE_HEIGHT"
-F 5 "SparkFun Electronics" H 5300 1650 50  0001 L BNN "MANUFACTURER"
-F 6 "01" H 5300 1650 50  0001 L BNN "PARTREV"
-F 7 "Manufacturer Recommendations" H 5300 1650 50  0001 L BNN "STANDARD"
-	1    5300 1650
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0102
-U 1 1 6139949D
-P 8400 3900
-F 0 "#PWR0102" H 8400 3650 50  0001 C CNN
-F 1 "GND" H 8405 3727 50  0000 C CNN
-F 2 "" H 8400 3900 50  0001 C CNN
-F 3 "" H 8400 3900 50  0001 C CNN
-	1    8400 3900
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	8850 3900 8400 3900
-Text GLabel 6350 4450 2    50   Input ~ 0
-GP4
-Wire Wire Line
-	8850 4200 8600 4200
-Wire Wire Line
-	6200 4450 6350 4450
-Text GLabel 6350 4150 2    50   Input ~ 0
-GP6
-Text GLabel 6350 4050 2    50   Input ~ 0
-GP7
-Text GLabel 8600 4100 0    50   Input ~ 0
-GP6
-Text GLabel 9600 4100 2    50   Input ~ 0
-GP7
-Wire Wire Line
-	9600 4100 9350 4100
-Wire Wire Line
-	8850 4100 8600 4100
-Wire Wire Line
-	6350 4050 6200 4050
-Wire Wire Line
-	6200 4150 6350 4150
-$Comp
-L power:GND #PWR0103
-U 1 1 613A46DD
-P 9950 1400
-F 0 "#PWR0103" H 9950 1150 50  0001 C CNN
-F 1 "GND" H 9955 1227 50  0000 C CNN
-F 2 "" H 9950 1400 50  0001 C CNN
-F 3 "" H 9950 1400 50  0001 C CNN
-	1    9950 1400
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	9850 1400 9950 1400
-$Comp
-L Connector:Screw_Terminal_01x02 J1
-U 1 1 61375E77
-P 6750 1550
-F 0 "J1" H 6900 1450 50  0000 C CNN
-F 1 "Screw_Terminal_01x02" H 7250 1550 50  0000 C CNN
-F 2 "TerminalBlock_MetzConnect:TerminalBlock_MetzConnect_360272_1x01_Horizontal_ScrewM2.6" H 6750 1550 50  0001 C CNN
-F 3 "~" H 6750 1550 50  0001 C CNN
-	1    6750 1550
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6550 1350 6550 1550
-Wire Wire Line
-	6000 1350 6550 1350
-$Comp
-L power:GND #PWR0105
-U 1 1 613C4FFD
-P 8500 5250
-F 0 "#PWR0105" H 8500 5000 50  0001 C CNN
-F 1 "GND" H 8505 5077 50  0000 C CNN
-F 2 "" H 8500 5250 50  0001 C CNN
-F 3 "" H 8500 5250 50  0001 C CNN
-	1    8500 5250
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	8900 5250 8500 5250
-Wire Wire Line
-	8900 5550 8650 5550
-Text GLabel 8600 4200 0    50   Input ~ 0
-GP4
-Text Label 6700 1350 0    50   ~ 0
-ESC_conection
-$Comp
-L power:GND #PWR0108
-U 1 1 613EDF9A
-P 4600 4750
-F 0 "#PWR0108" H 4600 4500 50  0001 C CNN
-F 1 "GND" H 4605 4577 50  0000 C CNN
-F 2 "" H 4600 4750 50  0001 C CNN
-F 3 "" H 4600 4750 50  0001 C CNN
-	1    4600 4750
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	4800 4750 4600 4750
-Text Notes 8100 7650 0    50   ~ 10
-9/3/21\n
-Text Notes 7350 7500 0    50   ~ 10
-Crazy Cart Autonomous Brain V1\n
-NoConn ~ 6200 4950
-NoConn ~ 6200 4850
-NoConn ~ 6200 4750
-NoConn ~ 6200 4650
-NoConn ~ 6200 4550
-NoConn ~ 6200 4350
-NoConn ~ 6200 4250
-NoConn ~ 6200 3950
-NoConn ~ 6200 3850
-NoConn ~ 6200 3750
-NoConn ~ 6200 3650
-NoConn ~ 6200 3550
-NoConn ~ 6200 3450
-NoConn ~ 6200 3350
-NoConn ~ 4800 4950
-NoConn ~ 4800 4850
-NoConn ~ 4800 4650
-NoConn ~ 4800 4450
-NoConn ~ 4800 4250
-NoConn ~ 4800 4150
-NoConn ~ 4800 4050
-NoConn ~ 4800 3950
-NoConn ~ 4800 3850
-NoConn ~ 4800 3750
-NoConn ~ 4800 3650
-NoConn ~ 4800 3550
-NoConn ~ 4800 3450
-NoConn ~ 4800 3350
-NoConn ~ 4800 3250
-NoConn ~ 5400 2850
-NoConn ~ 5500 2850
-NoConn ~ 5600 2850
-NoConn ~ 4600 1850
-NoConn ~ 4600 1750
-NoConn ~ 4600 1650
-NoConn ~ 6000 1850
-NoConn ~ 6000 1650
-NoConn ~ 6000 1750
-NoConn ~ 6000 1550
-NoConn ~ 9350 4200
-NoConn ~ 8900 5650
-NoConn ~ 8900 5750
-$Comp
-L power:+3.3V #PWR0109
-U 1 1 6140785E
-P 4400 4550
-F 0 "#PWR0109" H 4400 4400 50  0001 C CNN
-F 1 "+3.3V" H 4415 4723 50  0000 C CNN
-F 2 "" H 4400 4550 50  0001 C CNN
-F 3 "" H 4400 4550 50  0001 C CNN
-	1    4400 4550
-	0    -1   -1   0   
-$EndComp
-$Comp
-L power:+3.3V #PWR0110
-U 1 1 6140C2FC
-P 4350 1350
-F 0 "#PWR0110" H 4350 1200 50  0001 C CNN
-F 1 "+3.3V" H 4365 1523 50  0000 C CNN
-F 2 "" H 4350 1350 50  0001 C CNN
-F 3 "" H 4350 1350 50  0001 C CNN
-	1    4350 1350
-	0    -1   -1   0   
-$EndComp
-$Comp
-L power:+5V #PWR0111
-U 1 1 6140F10C
-P 8650 5550
-F 0 "#PWR0111" H 8650 5400 50  0001 C CNN
-F 1 "+5V" V 8665 5678 50  0000 L CNN
-F 2 "" H 8650 5550 50  0001 C CNN
-F 3 "" H 8650 5550 50  0001 C CNN
-	1    8650 5550
-	0    -1   -1   0   
-$EndComp
-$Comp
-L power:+3.3V #PWR0112
-U 1 1 614127F6
-P 9850 3900
-F 0 "#PWR0112" H 9850 3750 50  0001 C CNN
-F 1 "+3.3V" H 9865 4073 50  0000 C CNN
-F 2 "" H 9850 3900 50  0001 C CNN
-F 3 "" H 9850 3900 50  0001 C CNN
-	1    9850 3900
-	0    1    1    0   
-$EndComp
-$Comp
-L power:+5V #PWR0113
-U 1 1 614163BA
-P 9850 1700
-F 0 "#PWR0113" H 9850 1550 50  0001 C CNN
-F 1 "+5V" V 9865 1828 50  0000 L CNN
-F 2 "" H 9850 1700 50  0001 C CNN
-F 3 "" H 9850 1700 50  0001 C CNN
-	1    9850 1700
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	9850 3900 9350 3900
-Wire Wire Line
-	6550 2050 6000 2050
-Wire Wire Line
-	6550 1650 6550 2050
-Wire Wire Line
-	4800 4550 4400 4550
-Wire Wire Line
-	4600 1350 4350 1350
-Text Notes 8950 4390 0    59   ~ 12
-Antenna
-Text Notes 8990 5130 0    59   ~ 12
-Relay
-Text Notes 5370 5330 0    59   ~ 12
-PICO
-Text Notes 5030 980  0    59   ~ 12
-Level Converter
-Text Notes 9440 890  0    59   ~ 12
-USB Connector\n
-$Comp
-L USB1130-15-A_REVA:USB1130-15-A_REVA J?
-U 1 1 6135C7B0
-P 9450 1500
-F 0 "J?" H 9343 933 50  0000 C CNN
-F 1 "USB1130-15-A_REVA" H 9343 1024 50  0000 C CNN
-F 2 "GCT_USB1130-15-A_REVA" H 9450 1500 50  0001 L BNN
-F 3 "" H 9450 1500 50  0001 L BNN
-F 4 "A" H 9450 1500 50  0001 L BNN "PARTREV"
-F 5 "7.24mm" H 9450 1500 50  0001 L BNN "MAXIMUM_PACKAGE_HEIGHT"
-F 6 "Manufacturer Recommendations" H 9450 1500 50  0001 L BNN "STANDARD"
-F 7 "GCT" H 9450 1500 50  0001 L BNN "MANUFACTURER"
-	1    9450 1500
-	-1   0    0    1   
-$EndComp
-$Comp
-L LM1117T-3.3_NOPB:LM1117T-3.3_NOPB VR?
-U 1 1 61329E31
-P 9150 2700
-F 0 "VR?" H 9150 3067 50  0000 C CNN
-F 1 "LM1117T-3.3_NOPB" H 9150 2976 50  0000 C CNN
-F 2 "TO254P1054X470X1955-3" H 9150 2700 50  0001 L BNN
-F 3 "" H 9150 2700 50  0001 L BNN
-F 4 "Texas Instruments" H 9150 2700 50  0001 L BNN "MANUFACTURER"
-F 5 "O" H 9150 2700 50  0001 L BNN "PARTREV"
-F 6 "19.55mm" H 9150 2700 50  0001 L BNN "MAXIMUM_PACKAGE_HEIGHT"
-F 7 "IPC-7351B" H 9150 2700 50  0001 L BNN "STANDARD"
-F 8 "102750" H 9150 2700 50  0001 L BNN "SNAPEDA_PACKAGE_ID"
-	1    9150 2700
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+5V #PWR?
-U 1 1 61340E62
-P 8450 2600
-F 0 "#PWR?" H 8450 2450 50  0001 C CNN
-F 1 "+5V" V 8465 2728 50  0000 L CNN
-F 2 "" H 8450 2600 50  0001 C CNN
-F 3 "" H 8450 2600 50  0001 C CNN
-	1    8450 2600
-	0    -1   -1   0   
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 61341C99
-P 9950 2800
-F 0 "#PWR?" H 9950 2550 50  0001 C CNN
-F 1 "GND" H 9955 2627 50  0000 C CNN
-F 2 "" H 9950 2800 50  0001 C CNN
-F 3 "" H 9950 2800 50  0001 C CNN
-	1    9950 2800
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	9850 2800 9950 2800
-$EndSCHEMATC
->>>>>>> Stashed changes

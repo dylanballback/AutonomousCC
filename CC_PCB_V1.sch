@@ -129,17 +129,6 @@ Wire Wire Line
 Wire Wire Line
 	7150 3750 7300 3750
 $Comp
-L Connector:Screw_Terminal_01x02 J1
-U 1 1 61375E77
-P 6420 1620
-F 0 "J1" H 6570 1520 50  0000 C CNN
-F 1 "Screw_Terminal_01x02" H 6920 1620 50  0000 C CNN
-F 2 "TerminalBlock_MetzConnect:TerminalBlock_MetzConnect_Type011_RT05502HBWC_1x02_P5.00mm_Horizontal" H 6420 1620 50  0001 C CNN
-F 3 "~" H 6420 1620 50  0001 C CNN
-	1    6420 1620
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR0105
 U 1 1 613C4FFD
 P 8020 4880
@@ -291,16 +280,8 @@ Wire Wire Line
 	9850 2800 9950 2800
 Text Notes 8720 3110 0    59   ~ 12
 Linear Voltage REG\n   3.3V -> 5V
-Text Notes 6310 1500 0    59   ~ 12
+Text Notes 6300 1450 0    59   ~ 12
 ESC Connection
-Wire Wire Line
-	6000 1350 6220 1350
-Wire Wire Line
-	6220 1350 6220 1620
-Wire Wire Line
-	6220 1720 6220 2050
-Wire Wire Line
-	6220 2050 6000 2050
 NoConn ~ 8970 1640
 NoConn ~ 8970 1740
 Wire Wire Line
@@ -423,4 +404,25 @@ F 3 "" H 9450 3900 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	9350 3900 9450 3900
+$Comp
+L 282837-2:282837-2 Screw_Terminal1
+U 1 1 6136899C
+P 6600 1600
+F 0 "Screw_Terminal1" H 6730 1596 50  0000 L CNN
+F 1 "282837-2" H 6730 1505 50  0000 L CNN
+F 2 "TE_282837-2" H 6600 1600 50  0001 L BNN
+F 3 "" H 6600 1600 50  0001 L BNN
+F 4 "282837-2" H 6600 1600 50  0001 L BNN "Comment"
+	1    6600 1600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6000 1350 6300 1350
+Wire Wire Line
+	6300 1350 6300 1600
+Wire Wire Line
+	6300 1700 6300 2050
+Wire Wire Line
+	6000 2050 6300 2050
+Connection ~ 6000 2050
 $EndSCHEMATC
