@@ -4,11 +4,11 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
-Title ""
-Date ""
-Rev ""
-Comp ""
-Comment1 ""
+Title "Autonomous Crazy Cart V1"
+Date "09/12/2021"
+Rev "09/18/2021"
+Comp "Engineering Physics Propulsion Lab * EPPL *"
+Comment1 "might need future revisions"
 Comment2 ""
 Comment3 ""
 Comment4 ""
@@ -16,313 +16,335 @@ $EndDescr
 $Comp
 L MCU_RaspberryPi_and_Boards:Pico U1
 U 1 1 61312BD2
-P 6450 3600
-F 0 "U1" H 6450 3400 50  0000 L CNN
-F 1 "Pico" H 6400 3500 50  0000 L CNN
-F 2 "MCU_RaspberryPi_and_Boards:RPi_Pico_SMD_TH" V 6450 3600 50  0001 C CNN
-F 3 "" H 6450 3600 50  0001 C CNN
-	1    6450 3600
+P 4820 4440
+F 0 "U1" H 4820 4240 50  0000 L CNN
+F 1 "Pico" H 4770 4340 50  0000 L CNN
+F 2 "MCU_RaspberryPi_and_Boards:RPi_Pico_SMD_TH" V 4820 4440 50  0001 C CNN
+F 3 "" H 4820 4440 50  0001 C CNN
+	1    4820 4440
 	-1   0    0    1   
 $EndComp
 $Comp
 L Connector_Generic:Conn_01x06 J5
 U 1 1 6132C346
-P 8900 2765
-F 0 "J5" H 8980 2757 50  0000 L CNN
-F 1 "Relay_Conn_01x06" H 8980 2666 50  0000 L CNN
-F 2 "Connector_PinHeader_2.00mm:PinHeader_1x06_P2.00mm_Vertical" H 8900 2765 50  0001 C CNN
-F 3 "~" H 8900 2765 50  0001 C CNN
-	1    8900 2765
+P 7270 3605
+F 0 "J5" H 7350 3597 50  0000 L CNN
+F 1 "Relay_Conn_01x06" H 7350 3506 50  0000 L CNN
+F 2 "Connector_PinHeader_2.00mm:PinHeader_1x06_P2.00mm_Vertical" H 7270 3605 50  0001 C CNN
+F 3 "~" H 7270 3605 50  0001 C CNN
+	1    7270 3605
 	1    0    0    -1  
 $EndComp
 $Comp
 L Connector_Generic:Conn_02x04_Odd_Even J2
 U 1 1 6132E9AC
-P 9050 4000
-F 0 "J2" H 9100 4317 50  0000 C CNN
-F 1 "Antenna_Conn_02x04_Odd_Even" H 9100 4226 50  0000 C CNN
-F 2 "Connector_PinHeader_2.00mm:PinHeader_2x04_P2.00mm_Vertical" H 9050 4000 50  0001 C CNN
-F 3 "~" H 9050 4000 50  0001 C CNN
-	1    9050 4000
+P 7420 4840
+F 0 "J2" H 7470 5157 50  0000 C CNN
+F 1 "Antenna_Conn_02x04_Odd_Even" H 7470 5066 50  0000 C CNN
+F 2 "Connector_PinHeader_2.00mm:PinHeader_2x04_P2.00mm_Vertical" H 7420 4840 50  0001 C CNN
+F 3 "~" H 7420 4840 50  0001 C CNN
+	1    7420 4840
 	1    0    0    -1  
 $EndComp
-Text GLabel 9600 4000 2    50   Input ~ 0
+Text GLabel 7970 4840 2    50   Input ~ 0
 GP14
-Text GLabel 7250 2750 2    50   Input ~ 0
+Text GLabel 5620 3590 2    50   Input ~ 0
 GP14
-Text GLabel 8600 4000 0    50   Input ~ 0
+Text GLabel 6970 4840 0    50   Input ~ 0
 GP17
 Wire Wire Line
-	8450 2665 8700 2665
+	6820 3505 7070 3505
 Wire Wire Line
-	8450 2765 8700 2765
+	6820 3605 7070 3605
 Wire Wire Line
-	9350 4000 9600 4000
+	7720 4840 7970 4840
 Wire Wire Line
-	8600 4000 8850 4000
+	6970 4840 7220 4840
 Wire Wire Line
-	7250 2650 7150 2650
+	5620 3490 5520 3490
 Wire Wire Line
-	7150 2750 7250 2750
+	5520 3590 5620 3590
 $Comp
 L power:GND #PWR0102
 U 1 1 6139949D
-P 8400 3900
-F 0 "#PWR0102" H 8400 3650 50  0001 C CNN
-F 1 "GND" H 8405 3727 50  0000 C CNN
-F 2 "" H 8400 3900 50  0001 C CNN
-F 3 "" H 8400 3900 50  0001 C CNN
-	1    8400 3900
+P 6770 4740
+F 0 "#PWR0102" H 6770 4490 50  0001 C CNN
+F 1 "GND" H 6775 4567 50  0000 C CNN
+F 2 "" H 6770 4740 50  0001 C CNN
+F 3 "" H 6770 4740 50  0001 C CNN
+	1    6770 4740
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	8850 3900 8400 3900
-Text GLabel 7300 4050 2    50   Input ~ 0
+	7220 4740 6770 4740
+Text GLabel 5670 4890 2    50   Input ~ 0
 GP4
 Wire Wire Line
-	8850 4200 8600 4200
+	7220 5040 6970 5040
 Wire Wire Line
-	7150 4050 7300 4050
-Text GLabel 7300 3750 2    50   Input ~ 0
+	5520 4890 5670 4890
+Text GLabel 5670 4590 2    50   Input ~ 0
 GP6
-Text GLabel 7300 3650 2    50   Input ~ 0
+Text GLabel 5670 4490 2    50   Input ~ 0
 GP7
-Text GLabel 8600 4100 0    50   Input ~ 0
+Text GLabel 6970 4940 0    50   Input ~ 0
 GP6
-Text GLabel 8600 4200 0    50   Input ~ 0
+Text GLabel 6970 5040 0    50   Input ~ 0
 GP7
 Wire Wire Line
-	9600 4100 9350 4100
+	7970 4940 7720 4940
 Wire Wire Line
-	8850 4100 8600 4100
+	7220 4940 6970 4940
 Wire Wire Line
-	7150 3750 7300 3750
+	5520 4590 5670 4590
 $Comp
 L power:GND #PWR0105
 U 1 1 613C4FFD
-P 8300 2565
-F 0 "#PWR0105" H 8300 2315 50  0001 C CNN
-F 1 "GND" H 8305 2392 50  0000 C CNN
-F 2 "" H 8300 2565 50  0001 C CNN
-F 3 "" H 8300 2565 50  0001 C CNN
-	1    8300 2565
+P 6670 3405
+F 0 "#PWR0105" H 6670 3155 50  0001 C CNN
+F 1 "GND" H 6675 3232 50  0000 C CNN
+F 2 "" H 6670 3405 50  0001 C CNN
+F 3 "" H 6670 3405 50  0001 C CNN
+	1    6670 3405
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	8700 2565 8300 2565
+	7070 3405 6670 3405
 Wire Wire Line
-	8700 3065 8450 3065
-Text GLabel 9600 4100 2    50   Input ~ 0
+	7070 3905 6820 3905
+Text GLabel 7970 4940 2    50   Input ~ 0
 GP4
-Text Notes 8100 7650 0    50   ~ 10
-9/3/21\n
-Text Notes 7350 7500 0    50   ~ 10
-Crazy Cart Autonomous Brain V1\n
-NoConn ~ 7150 4550
-NoConn ~ 7150 4450
-NoConn ~ 7150 4350
-NoConn ~ 7150 4250
-NoConn ~ 7150 4150
-NoConn ~ 7150 3950
-NoConn ~ 7150 3850
-NoConn ~ 7150 3550
-NoConn ~ 7150 3450
-NoConn ~ 7150 3350
-NoConn ~ 7150 3250
-NoConn ~ 7150 3150
-NoConn ~ 7150 3050
-NoConn ~ 7150 2950
-NoConn ~ 5750 4550
-NoConn ~ 5750 4250
-NoConn ~ 5750 4050
-NoConn ~ 5750 3850
-NoConn ~ 5750 3750
-NoConn ~ 5750 3650
-NoConn ~ 5750 3550
-NoConn ~ 5750 3450
-NoConn ~ 5750 3350
-NoConn ~ 5750 3250
-NoConn ~ 5750 3150
-NoConn ~ 5750 3050
-NoConn ~ 5750 2950
-NoConn ~ 5750 2850
-NoConn ~ 6350 2450
-NoConn ~ 6450 2450
-NoConn ~ 6550 2450
-NoConn ~ 9350 4200
-NoConn ~ 8700 2965
-NoConn ~ 8700 2865
+NoConn ~ 5520 5390
+NoConn ~ 5520 5290
+NoConn ~ 5520 5190
+NoConn ~ 5520 5090
+NoConn ~ 5520 4990
+NoConn ~ 5520 4790
+NoConn ~ 5520 4690
+NoConn ~ 5520 4390
+NoConn ~ 5520 4290
+NoConn ~ 5520 4190
+NoConn ~ 5520 4090
+NoConn ~ 5520 3990
+NoConn ~ 4120 5390
+NoConn ~ 4120 5090
+NoConn ~ 4120 4890
+NoConn ~ 4120 4690
+NoConn ~ 4120 4390
+NoConn ~ 4120 4190
+NoConn ~ 4120 3990
+NoConn ~ 4120 3890
+NoConn ~ 4120 3790
+NoConn ~ 4120 3690
+NoConn ~ 4720 3290
+NoConn ~ 4820 3290
+NoConn ~ 4920 3290
+NoConn ~ 7720 5040
+NoConn ~ 7070 3805
+NoConn ~ 7070 3705
 $Comp
 L power:+5V #PWR0113
 U 1 1 614163BA
-P 8970 1840
-F 0 "#PWR0113" H 8970 1690 50  0001 C CNN
-F 1 "+5V" V 8985 1968 50  0000 L CNN
-F 2 "" H 8970 1840 50  0001 C CNN
-F 3 "" H 8970 1840 50  0001 C CNN
-	1    8970 1840
+P 7340 2680
+F 0 "#PWR0113" H 7340 2530 50  0001 C CNN
+F 1 "+5V" V 7355 2808 50  0000 L CNN
+F 2 "" H 7340 2680 50  0001 C CNN
+F 3 "" H 7340 2680 50  0001 C CNN
+	1    7340 2680
 	0    1    1    0   
 $EndComp
-Text Notes 8950 4390 0    59   ~ 12
+Text Notes 7320 5230 0    59   ~ 12
 Antenna
-Text Notes 8790 2445 0    59   ~ 12
+Text Notes 7160 3285 0    59   ~ 12
 Relay
-Text Notes 6310 4830 0    59   ~ 12
+Text Notes 4680 5670 0    59   ~ 12
 PICO
-Text Notes 8390 960  0    59   ~ 12
+Text Notes 6760 1800 0    59   ~ 12
 USB Connector\n
 $Comp
 L USB1130-15-A_REVA:USB1130-15-A_REVA J3
 U 1 1 6135C7B0
-P 8570 1640
-F 0 "J3" H 8463 1073 50  0000 C CNN
-F 1 "USB1130-15-A_REVA" H 8463 1164 50  0000 C CNN
-F 2 "MCU_RaspberryPi_and_Boards:GCT_USB1130-15-A_REVA" H 8570 1640 50  0001 L BNN
-F 3 "" H 8570 1640 50  0001 L BNN
-F 4 "A" H 8570 1640 50  0001 L BNN "PARTREV"
-F 5 "7.24mm" H 8570 1640 50  0001 L BNN "MAXIMUM_PACKAGE_HEIGHT"
-F 6 "Manufacturer Recommendations" H 8570 1640 50  0001 L BNN "STANDARD"
-F 7 "GCT" H 8570 1640 50  0001 L BNN "MANUFACTURER"
-	1    8570 1640
+P 6940 2480
+F 0 "J3" H 6833 1913 50  0000 C CNN
+F 1 "USB1130-15-A_REVA" H 6833 2004 50  0000 C CNN
+F 2 "MCU_RaspberryPi_and_Boards:GCT_USB1130-15-A_REVA" H 6940 2480 50  0001 L BNN
+F 3 "" H 6940 2480 50  0001 L BNN
+F 4 "A" H 6940 2480 50  0001 L BNN "PARTREV"
+F 5 "7.24mm" H 6940 2480 50  0001 L BNN "MAXIMUM_PACKAGE_HEIGHT"
+F 6 "Manufacturer Recommendations" H 6940 2480 50  0001 L BNN "STANDARD"
+F 7 "GCT" H 6940 2480 50  0001 L BNN "MANUFACTURER"
+	1    6940 2480
 	-1   0    0    1   
 $EndComp
-Text Notes 6150 1210 0    59   ~ 12
+Text Notes 4730 2010 0    59   ~ 12
 ESC Connection
-NoConn ~ 8970 1640
-NoConn ~ 8970 1740
+NoConn ~ 7340 2480
+NoConn ~ 7340 2580
 $Comp
 L power:GND #PWR0103
 U 1 1 6132ADE6
-P 8970 1540
-F 0 "#PWR0103" H 8970 1290 50  0001 C CNN
-F 1 "GND" V 8960 1340 50  0000 C CNN
-F 2 "" H 8970 1540 50  0001 C CNN
-F 3 "" H 8970 1540 50  0001 C CNN
-	1    8970 1540
+P 7340 2380
+F 0 "#PWR0103" H 7340 2130 50  0001 C CNN
+F 1 "GND" V 7330 2180 50  0000 C CNN
+F 2 "" H 7340 2380 50  0001 C CNN
+F 3 "" H 7340 2380 50  0001 C CNN
+	1    7340 2380
 	0    -1   -1   0   
 $EndComp
 $Comp
 L power:GND #PWR0101
 U 1 1 6132D47F
-P 7470 2850
-F 0 "#PWR0101" H 7470 2600 50  0001 C CNN
-F 1 "GND" V 7460 2650 50  0000 C CNN
-F 2 "" H 7470 2850 50  0001 C CNN
-F 3 "" H 7470 2850 50  0001 C CNN
-	1    7470 2850
+P 5840 3690
+F 0 "#PWR0101" H 5840 3440 50  0001 C CNN
+F 1 "GND" V 5830 3490 50  0000 C CNN
+F 2 "" H 5840 3690 50  0001 C CNN
+F 3 "" H 5840 3690 50  0001 C CNN
+	1    5840 3690
 	0    -1   -1   0   
 $EndComp
 $Comp
 L power:PWR_FLAG #FLG0103
 U 1 1 6132C74E
-P 7150 2850
-F 0 "#FLG0103" H 7150 2925 50  0001 C CNN
-F 1 "PWR_FLAG" V 7140 2900 50  0000 L CNN
-F 2 "" H 7150 2850 50  0001 C CNN
-F 3 "~" H 7150 2850 50  0001 C CNN
-	1    7150 2850
+P 5520 3690
+F 0 "#FLG0103" H 5520 3765 50  0001 C CNN
+F 1 "PWR_FLAG" V 5510 3740 50  0000 L CNN
+F 2 "" H 5520 3690 50  0001 C CNN
+F 3 "~" H 5520 3690 50  0001 C CNN
+	1    5520 3690
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	7150 2850 7470 2850
-NoConn ~ 5750 4350
-Text GLabel 7250 2650 2    50   Input ~ 0
+	5520 3690 5840 3690
+NoConn ~ 4120 5190
+Text GLabel 5620 3490 2    50   Input ~ 0
 GP15
-Text GLabel 5600 3950 0    50   Input ~ 0
+Text GLabel 3970 4790 0    50   Input ~ 0
 GP28
 $Comp
 L 282837-2:282837-2 Screw_Terminal1
 U 1 1 6136899C
-P 6450 1350
-F 0 "Screw_Terminal1" H 6580 1346 50  0000 L CNN
-F 1 "282837-2" H 6580 1255 50  0000 L CNN
-F 2 "MCU_RaspberryPi_and_Boards:TE_282837-2" H 6450 1350 50  0001 L BNN
-F 3 "" H 6450 1350 50  0001 L BNN
-F 4 "282837-2" H 6450 1350 50  0001 L BNN "Comment"
-	1    6450 1350
+P 4820 2190
+F 0 "Screw_Terminal1" H 4950 2186 50  0000 L CNN
+F 1 "282837-2" H 4950 2095 50  0000 L CNN
+F 2 "MCU_RaspberryPi_and_Boards:TE_282837-2" H 4820 2190 50  0001 L BNN
+F 3 "" H 4820 2190 50  0001 L BNN
+F 4 "282837-2" H 4820 2190 50  0001 L BNN "Comment"
+	1    4820 2190
 	1    0    0    -1  
 $EndComp
-NoConn ~ 5750 4150
 $Comp
 L power:PWR_FLAG #FLG0101
 U 1 1 6138143E
-P 8970 1840
-F 0 "#FLG0101" H 8970 1915 50  0001 C CNN
-F 1 "PWR_FLAG" V 9040 1740 50  0000 L CNN
-F 2 "" H 8970 1840 50  0001 C CNN
-F 3 "~" H 8970 1840 50  0001 C CNN
-	1    8970 1840
+P 7340 2680
+F 0 "#FLG0101" H 7340 2755 50  0001 C CNN
+F 1 "PWR_FLAG" V 7410 2580 50  0000 L CNN
+F 2 "" H 7340 2680 50  0001 C CNN
+F 3 "~" H 7340 2680 50  0001 C CNN
+	1    7340 2680
 	0    1    1    0   
 $EndComp
-Connection ~ 8970 1840
+Connection ~ 7340 2680
 $Comp
 L power:GND #PWR0109
 U 1 1 6139CFDB
-P 6150 1450
-F 0 "#PWR0109" H 6150 1200 50  0001 C CNN
-F 1 "GND" V 6190 1485 50  0000 C CNN
-F 2 "" H 6150 1450 50  0001 C CNN
-F 3 "" H 6150 1450 50  0001 C CNN
-	1    6150 1450
+P 4520 2290
+F 0 "#PWR0109" H 4520 2040 50  0001 C CNN
+F 1 "GND" V 4560 2325 50  0000 C CNN
+F 2 "" H 4520 2290 50  0001 C CNN
+F 3 "" H 4520 2290 50  0001 C CNN
+	1    4520 2290
 	0    1    1    0   
 $EndComp
-Text GLabel 5600 4450 0    50   Input ~ 0
+Text GLabel 3970 5290 0    50   Input ~ 0
 +3.3V
-Text GLabel 8450 3065 0    50   Input ~ 0
+Text GLabel 6820 3905 0    50   Input ~ 0
 +5V
 Wire Wire Line
-	9350 3900 9600 3900
-Text GLabel 9600 3900 2    50   Input ~ 0
+	7720 4740 7970 4740
+Text GLabel 7970 4740 2    50   Input ~ 0
 +3.3V
-NoConn ~ 5750 2650
-NoConn ~ 5750 2750
-Text GLabel 8450 2665 0    50   Input ~ 0
+NoConn ~ 4120 3490
+NoConn ~ 4120 3590
+Text GLabel 6820 3505 0    50   Input ~ 0
 GP10
-Text GLabel 8450 2765 0    50   Input ~ 0
+Text GLabel 6820 3605 0    50   Input ~ 0
 GP11
 Wire Wire Line
-	7300 3650 7150 3650
+	5670 4490 5520 4490
 Wire Wire Line
-	5750 3950 5600 3950
+	4120 4790 3970 4790
 Wire Wire Line
-	5750 4450 5600 4450
-Text GLabel 6150 1350 1    50   Input ~ 0
+	4120 5290 3970 5290
+Text GLabel 4520 2190 1    50   Input ~ 0
 +5V
 $Comp
-L Regulator_Linear:LM337_TO3 U?
+L Regulator_Linear:LM337_TO3 U2
 U 1 1 6146A6D0
-P 5140 1350
-F 0 "U?" H 5140 1108 50  0000 C CNN
-F 1 "LM337_TO3" H 5140 1199 50  0000 C CNN
-F 2 "Package_TO_SOT_THT:TO-3" H 5140 1150 50  0001 C CIN
-F 3 "http://www.ti.com/lit/ds/symlink/lm337-n.pdf" H 5140 1350 50  0001 C CNN
-	1    5140 1350
+P 3510 2190
+F 0 "U2" H 3510 1948 50  0000 C CNN
+F 1 "LM337_TO3" H 3510 2039 50  0000 C CNN
+F 2 "MCU_RaspberryPi_and_Boards:TO254P1054X470X1955-3" H 3510 1990 50  0001 C CIN
+F 3 "http://www.ti.com/lit/ds/symlink/lm337-n.pdf" H 3510 2190 50  0001 C CNN
+	1    3510 2190
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	6150 1350 5440 1350
-Text GLabel 4840 1350 0    50   Input ~ 0
+	4520 2190 3810 2190
+Text GLabel 3210 2190 0    50   Input ~ 0
 +3.3V
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0104
 U 1 1 6146C342
-P 5140 1650
-F 0 "#PWR?" H 5140 1400 50  0001 C CNN
-F 1 "GND" H 5215 1640 50  0000 C CNN
-F 2 "" H 5140 1650 50  0001 C CNN
-F 3 "" H 5140 1650 50  0001 C CNN
-	1    5140 1650
+P 3510 2490
+F 0 "#PWR0104" H 3510 2240 50  0001 C CNN
+F 1 "GND" H 3585 2480 50  0000 C CNN
+F 2 "" H 3510 2490 50  0001 C CNN
+F 3 "" H 3510 2490 50  0001 C CNN
+	1    3510 2490
 	1    0    0    -1  
 $EndComp
+Text Notes 3160 1870 0    59   ~ 12
+Voltage Regulator
+Connection ~ 5520 3690
+Text GLabel 3970 4990 0    59   Output ~ 0
+3.3V
+Text GLabel 4420 2575 0    59   Input ~ 0
+3.3V
+Wire Wire Line
+	4120 4990 3970 4990
+Text GLabel 4420 2675 0    59   Input ~ 0
+GP12
+Text GLabel 4420 2775 0    59   Input ~ 0
+GP13
+Text GLabel 4420 2875 0    59   Input ~ 0
+GP21
+Text GLabel 4420 2975 0    59   Input ~ 0
+GP22
 $Comp
-L Connector:Screw_Terminal_01x06 J?
-U 1 1 61471123
-P 6250 1935
-F 0 "J?" H 6330 1927 50  0000 L CNN
-F 1 "Screw_Terminal_01x06" H 6330 1836 50  0000 L CNN
-F 2 "" H 6250 1935 50  0001 C CNN
-F 3 "~" H 6250 1935 50  0001 C CNN
-	1    6250 1935
+L Connector:Screw_Terminal_01x07 J1
+U 1 1 6146F2F5
+P 4620 2875
+F 0 "J1" H 4700 2917 50  0000 L CNN
+F 1 "Screw_Terminal_01x07" H 4700 2826 50  0000 L CNN
+F 2 "TerminalBlock_TE-Connectivity:TerminalBlock_TE_282834-7_1x07_P2.54mm_Horizontal" H 4620 2875 50  0001 C CNN
+F 3 "~https://www.amazon.com/SamIdea-10Pieces-2-54mm-Terminal-Assorted/dp/B07FTJSNN7/ref=sr_1_4?dchild=1&keywords=1x3+screw+terminal+smd&qid=1631916388&sr=8-4" H 4620 2875 50  0001 C CNN
+	1    4620 2875
 	1    0    0    -1  
 $EndComp
+Text GLabel 4420 3075 0    59   Input ~ 0
+GP26
+Text GLabel 4420 3175 0    59   Input ~ 0
+GP27
+Text GLabel 5520 3890 2    59   Input ~ 0
+GP12
+Text GLabel 5520 3790 2    59   Input ~ 0
+GP13
+Text GLabel 4120 4090 0    59   Input ~ 0
+GP21
+Text GLabel 4120 4290 0    59   Input ~ 0
+GP22
+Text GLabel 4120 4490 0    59   Input ~ 0
+GP26
+Text GLabel 4120 4590 0    59   Input ~ 0
+GP27
 $EndSCHEMATC
