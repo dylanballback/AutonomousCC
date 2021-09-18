@@ -124,8 +124,6 @@ NoConn ~ 5520 4690
 NoConn ~ 5520 4390
 NoConn ~ 5520 4290
 NoConn ~ 5520 4190
-NoConn ~ 5520 4090
-NoConn ~ 5520 3990
 NoConn ~ 4120 5390
 NoConn ~ 4120 5090
 NoConn ~ 4120 4890
@@ -142,55 +140,14 @@ NoConn ~ 4920 3290
 NoConn ~ 7720 5040
 NoConn ~ 7070 3805
 NoConn ~ 7070 3705
-$Comp
-L power:+5V #PWR0113
-U 1 1 614163BA
-P 7340 2680
-F 0 "#PWR0113" H 7340 2530 50  0001 C CNN
-F 1 "+5V" V 7355 2808 50  0000 L CNN
-F 2 "" H 7340 2680 50  0001 C CNN
-F 3 "" H 7340 2680 50  0001 C CNN
-	1    7340 2680
-	0    1    1    0   
-$EndComp
 Text Notes 7320 5230 0    59   ~ 12
 Antenna
 Text Notes 7160 3285 0    59   ~ 12
 Relay
 Text Notes 4680 5670 0    59   ~ 12
 PICO
-Text Notes 6760 1800 0    59   ~ 12
-USB Connector\n
-$Comp
-L USB1130-15-A_REVA:USB1130-15-A_REVA J3
-U 1 1 6135C7B0
-P 6940 2480
-F 0 "J3" H 6833 1913 50  0000 C CNN
-F 1 "USB1130-15-A_REVA" H 6833 2004 50  0000 C CNN
-F 2 "MCU_RaspberryPi_and_Boards:GCT_USB1130-15-A_REVA" H 6940 2480 50  0001 L BNN
-F 3 "" H 6940 2480 50  0001 L BNN
-F 4 "A" H 6940 2480 50  0001 L BNN "PARTREV"
-F 5 "7.24mm" H 6940 2480 50  0001 L BNN "MAXIMUM_PACKAGE_HEIGHT"
-F 6 "Manufacturer Recommendations" H 6940 2480 50  0001 L BNN "STANDARD"
-F 7 "GCT" H 6940 2480 50  0001 L BNN "MANUFACTURER"
-	1    6940 2480
-	-1   0    0    1   
-$EndComp
 Text Notes 4730 2010 0    59   ~ 12
 ESC Connection
-NoConn ~ 7340 2480
-NoConn ~ 7340 2580
-$Comp
-L power:GND #PWR0103
-U 1 1 6132ADE6
-P 7340 2380
-F 0 "#PWR0103" H 7340 2130 50  0001 C CNN
-F 1 "GND" V 7330 2180 50  0000 C CNN
-F 2 "" H 7340 2380 50  0001 C CNN
-F 3 "" H 7340 2380 50  0001 C CNN
-	1    7340 2380
-	0    -1   -1   0   
-$EndComp
 $Comp
 L power:GND #PWR0101
 U 1 1 6132D47F
@@ -216,8 +173,6 @@ $EndComp
 Wire Wire Line
 	5520 3690 5840 3690
 NoConn ~ 4120 5190
-Text GLabel 5620 3490 2    50   Input ~ 0
-GP15
 Text GLabel 3970 4790 0    50   Input ~ 0
 GP28
 $Comp
@@ -232,18 +187,6 @@ F 4 "282837-2" H 4820 2190 50  0001 L BNN "Comment"
 	1    4820 2190
 	1    0    0    -1  
 $EndComp
-$Comp
-L power:PWR_FLAG #FLG0101
-U 1 1 6138143E
-P 7340 2680
-F 0 "#FLG0101" H 7340 2755 50  0001 C CNN
-F 1 "PWR_FLAG" V 7410 2580 50  0000 L CNN
-F 2 "" H 7340 2680 50  0001 C CNN
-F 3 "~" H 7340 2680 50  0001 C CNN
-	1    7340 2680
-	0    1    1    0   
-$EndComp
-Connection ~ 7340 2680
 $Comp
 L power:GND #PWR0109
 U 1 1 6139CFDB
@@ -264,10 +207,9 @@ Wire Wire Line
 Text GLabel 7970 4740 2    50   Input ~ 0
 +3.3V
 NoConn ~ 4120 3490
-NoConn ~ 4120 3590
-Text GLabel 6820 3505 0    50   Input ~ 0
+Text GLabel 6820 3505 0    50   Output ~ 0
 GP10
-Text GLabel 6820 3605 0    50   Input ~ 0
+Text GLabel 6820 3605 0    50   Output ~ 0
 GP11
 Wire Wire Line
 	5670 4490 5520 4490
@@ -277,32 +219,8 @@ Wire Wire Line
 	4120 5290 3970 5290
 Text GLabel 4520 2190 1    50   Input ~ 0
 +5V
-$Comp
-L Regulator_Linear:LM337_TO3 U2
-U 1 1 6146A6D0
-P 3510 2190
-F 0 "U2" H 3510 1948 50  0000 C CNN
-F 1 "LM337_TO3" H 3510 2039 50  0000 C CNN
-F 2 "MCU_RaspberryPi_and_Boards:TO254P1054X470X1955-3" H 3510 1990 50  0001 C CIN
-F 3 "http://www.ti.com/lit/ds/symlink/lm337-n.pdf" H 3510 2190 50  0001 C CNN
-	1    3510 2190
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	4520 2190 3810 2190
-Text GLabel 3210 2190 0    50   Input ~ 0
+Text GLabel 3150 2190 0    50   Input ~ 0
 +3.3V
-$Comp
-L power:GND #PWR0104
-U 1 1 6146C342
-P 3510 2490
-F 0 "#PWR0104" H 3510 2240 50  0001 C CNN
-F 1 "GND" H 3585 2480 50  0000 C CNN
-F 2 "" H 3510 2490 50  0001 C CNN
-F 3 "" H 3510 2490 50  0001 C CNN
-	1    3510 2490
-	1    0    0    -1  
-$EndComp
 Text Notes 3160 1870 0    59   ~ 12
 Voltage Regulator
 Connection ~ 5520 3690
@@ -347,4 +265,68 @@ Text GLabel 4120 4490 0    59   Input ~ 0
 GP26
 Text GLabel 4120 4590 0    59   Input ~ 0
 GP27
+$Comp
+L Device:C C2
+U 1 1 61465212
+P 3830 2340
+F 0 "C2" H 3735 2410 50  0000 L CNN
+F 1 "C" H 3735 2265 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D8.0mm_P5.00mm" H 3868 2190 50  0001 C CNN
+F 3 "https://www.vishay.com/docs/28549/dseries.pdf" H 3830 2340 50  0001 C CNN
+	1    3830 2340
+	1    0    0    -1  
+$EndComp
+$Comp
+L Regulator_Linear:LM337_TO3 U2
+U 1 1 6146A6D0
+P 3530 2190
+F 0 "U2" H 3530 1948 50  0000 C CNN
+F 1 "LM337_TO3" H 3530 2039 50  0000 C CNN
+F 2 "MCU_RaspberryPi_and_Boards:SOT230P696X180-4N" H 3530 1990 50  0001 C CIN
+F 3 "http://www.ti.com/lit/ds/symlink/lm337-n.pdf" H 3530 2190 50  0001 C CNN
+	1    3530 2190
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3230 2490 3530 2490
+Wire Wire Line
+	3230 2190 3150 2190
+Connection ~ 3230 2190
+$Comp
+L power:GND #PWR0104
+U 1 1 6146C342
+P 3530 2520
+F 0 "#PWR0104" H 3530 2270 50  0001 C CNN
+F 1 "GND" H 3605 2510 50  0000 C CNN
+F 2 "" H 3530 2520 50  0001 C CNN
+F 3 "" H 3530 2520 50  0001 C CNN
+	1    3530 2520
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3530 2490 3530 2520
+Connection ~ 3530 2490
+$Comp
+L Device:CP C1
+U 1 1 61472D8C
+P 3230 2340
+F 0 "C1" H 3230 2415 50  0000 L CNN
+F 1 "CP" H 3235 2260 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D8.0mm_P5.00mm" H 3268 2190 50  0001 C CNN
+F 3 "https://www.tdk-electronics.tdk.com/inf/20/30/db/aec/B41866.pdf" H 3230 2340 50  0001 C CNN
+	1    3230 2340
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3830 2490 3530 2490
+Wire Wire Line
+	3830 2190 4520 2190
+Connection ~ 3830 2190
+Text GLabel 5520 4090 2    50   Input ~ 0
+GP10
+Text GLabel 5520 3990 2    50   Input ~ 0
+GP11
+NoConn ~ 5620 3490
+Text GLabel 4120 3590 0    50   Input ~ 0
+GP17
 $EndSCHEMATC
